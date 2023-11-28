@@ -65,31 +65,38 @@ public class MainApp extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(255, 102, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setText("jButton1");
+        jButton1.setText("Menu 1");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton2.setBackground(new java.awt.Color(51, 255, 51));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setText("jButton1");
+        jButton2.setText("Menu 2");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton3.setBackground(new java.awt.Color(0, 255, 204));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setText("jButton1");
+        jButton3.setText("Menu 3");
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton4.setBackground(new java.awt.Color(51, 153, 255));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton4.setText("jButton1");
+        jButton4.setText("Menu 4");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton5.setBackground(new java.awt.Color(255, 153, 204));
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setText("jButton1");
+        jButton5.setText("Menu 5");
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton6.setBackground(new java.awt.Color(255, 0, 153));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton6.setText("jButton1");
+        jButton6.setText("Menu 6");
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton7.setBackground(new java.awt.Color(0, 0, 255));
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton7.setText("jButton1");
+        jButton7.setText("Menu 7");
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("jLabel1");
@@ -153,10 +160,13 @@ public class MainApp extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Change Look And Feel");
 
+        jRadioButton1.setBackground(new java.awt.Color(255, 204, 204));
         jRadioButton1.setText("jRadioButton1");
 
+        jRadioButton2.setBackground(new java.awt.Color(102, 204, 255));
         jRadioButton2.setText("jRadioButton2");
 
+        jRadioButton3.setBackground(new java.awt.Color(204, 255, 204));
         jRadioButton3.setText("jRadioButton3");
 
         jButton8.setText("jButton8");
@@ -306,7 +316,9 @@ public class MainApp extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new MainApp().setVisible(true);
+            MainApp m = new MainApp();
+            m.setExtendedState(Frame.MAXIMIZED_BOTH); 
+            m.setVisible(true);
         });
     }
 
